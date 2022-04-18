@@ -20,7 +20,7 @@
             <a class="site-list__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="photo.html">Фото и видео</a>
+            <a class="site-list__link" href="catalog.html">Фото и видео</a>
           </li>
           <li class="site-list__item site-list__item--current">
             <a class="site-list__link" href="form.html">Форма отзыва</a>
@@ -34,10 +34,8 @@
   </header>
   <main class="form-container">
     <h1 class="visually-hidden">Оставьте свой отзыв.</h1>
-    <div class="catalog-page-logo">
-      <div class="inner-page-header">
-        <img class="inner-page-header__logo" src="img/catalog-sedona.svg" width="229" height="39" alt="Sedona.">
-      </div>
+    <div class="inner-page-header">
+      <img class="inner-page-header__logo" src="img/catalog-sedona.svg" width="229" height="39" alt="Sedona.">
     </div>
     <section class="feedback">
       <div class="feedback__form-header">
@@ -47,7 +45,7 @@
       </div>
       <form class="feedback" action="https://echo.htmlacademy.ru" method="get">
         <div class="feedback__personal-data">
-          <div class="feedback__personal-data feedback__personal-data--name">
+          <div class="feedback__personal-wrapper feedback__personal-wrapper--name">
             <fieldset class="name">
               <legend class="name__title">Представьтесь:</legend>
               <label class="name__signature-name">Имя*:<input type="text" placeholder="Пётр" required></label>
@@ -55,7 +53,7 @@
               <label class="name__signature-name">Отчество:<input type="text" placeholder="Викторович"></label>
             </fieldset>
           </div>
-          <div class="feedback__personal-data feedback__personal-data--contacts">
+          <div class="feedback__personal-wrapper feedback__personal-wrapper--contacts">
             <fieldset class="contacts">
               <legend class="contacts__title">Контактная информация:</legend>
               <label class="contacts__label" for="phone-number">Контактный телефон*:</label>
@@ -67,7 +65,7 @@
             </fieldset>
           </div>
         </div>
-        <div class="feedback__personal-data feedback__personal-data--personal-impression">
+        <div class="feedback__personal-wrapper feedback__personal-wrapper--personal-impression">
           <fieldset class="personal-impression">
             <legend class="personal-impression__title">Ваше общее впечатление:</legend>
             <ul class="personal-impression__list">
@@ -89,7 +87,7 @@
             </ul>
           </fieldset>
         </div>
-        <div class="feedback__personal-data feedback__personal-data--visited-attractions">
+        <div class="feedback__personal-wrapper feedback__personal-wrapper--visited-attractions">
           <fieldset class="visited-attractions">
             <legend class="visited-attractions__title">Посещенные достопримечательности:</legend>
             <ul class="visited-attractions__list">
@@ -115,7 +113,7 @@
             </ul>
           </fieldset>
         </div>
-        <div class="feedback__personal-data feedback__personal-data--describe-emotions">
+        <div class="feedback__personal-wrapper feedback__personal-wrapper--describe-emotions">
           <fieldset class="describe-emotions">
             <legend class="describe-emotions__title">Опишите свои эмоции:</legend>
             <textarea id="describe-emotions" name="describe-emotions"></textarea>
@@ -152,6 +150,24 @@
       </div>
     </div>
   </footer>
+  <!--Модальное окошко-->
+  <section class="message message--error">
+    <div class="message__wrapper">
+      <h2 class="message__title text text--heading">Что-то пошло не так!</h2>
+      <p class="message__description text text--description">
+        Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+      </p>
+      <button class="button" type="button">OK</button>
+    </div>
+  </section>
+  <section class="message message--success">
+    <div class="message__wrapper">
+      <h2 class="message__title text text--heading">Ваш отзыв отправлен!</h2>
+      <p class="message__description text text--description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В
+        ближайшее время мы опубликуем его на сайте.</p>
+      <button class="button" type="button">Закрыть окно</button>
+    </div>
+  </section>
 </body>
 
 </html>
