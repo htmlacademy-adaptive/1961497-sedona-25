@@ -1,9 +1,8 @@
 .hero {
-  display: flex;
-  flex-direction: column;
+  display: inline-block;
   position: relative;
   color: #ffffff;
-  background-image: url("../img/back-desktop.jpg");
+  background-image: url("../img/back-mobile.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   box-sizing: border-box;
@@ -19,10 +18,11 @@
   position: absolute;
   content: "";
   width: 100%;
-  height: 57px;
+  min-height: 57px;
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url("../img/mask-desktop.svg");
+  background-image: url("../img/mask-mobile.svg");
   background-repeat: no-repeat;
+  background-position: center;
 }
