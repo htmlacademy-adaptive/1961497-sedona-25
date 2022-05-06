@@ -1,5 +1,5 @@
 .hero {
-  display: inline-block;
+  display: block;
   position: relative;
   color: #ffffff;
   background-image: url("../img/back-mobile.jpg");
@@ -8,10 +8,19 @@
   box-sizing: border-box;
   text-align: center;
   align-items: center;
-  min-height: 389px;
+  height: auto;
+  max-width: 100%;
   margin-bottom: 32px;
   padding-top: 50px;
   padding-bottom: 80px;
+}
+
+.hero__logo {
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  height: auto;
+  max-width: 100%;
 }
 
 .hero::after {
